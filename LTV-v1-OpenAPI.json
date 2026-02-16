@@ -1,0 +1,288 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "LTV Protocol API",
+    "version": "v1.0-alpha",
+    "description": "Agent-oriented protocol surface for identity, prediction, routing, and node health. Early alpha specification."
+  },
+  "servers": [
+    {
+      "url": "https://api.ltv.com",
+      "description": "Primary API endpoint"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Node health (root)",
+        "operationId": "getRoot",
+        "responses": {
+          "200": {
+            "description": "Health payload",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/identity": {
+      "get": {
+        "summary": "Get protocol identity & root certificate placeholder",
+        "operationId": "getIdentity",
+        "responses": {
+          "200": {
+            "description": "Identity payload",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/IdentityResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/predict": {
+      "post": {
+        "summary": "Predict lifetime value from de-identified multi-platform signals",
+        "operationId": "postPredict",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PredictRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Prediction output",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PredictResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/routing": {
+      "get": {
+        "summary": "Return value-weight hints for multi-agent routing",
+        "operationId": "getRouting",
+        "parameters": [
+          {
+            "name": "subject",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Opaque subject identifier (hashed / de-identified)."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Routing hint output",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoutingResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HealthResponse": {
+        "type": "object",
+        "required": [
+          "status",
+          "protocol",
+          "version",
+          "endpoints",
+          "timestamp"
+        ],
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "protocol": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "endpoints": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "IdentityResponse": {
+        "type": "object",
+        "required": [
+          "protocol",
+          "version",
+          "issuer",
+          "labels",
+          "root_certificate",
+          "issued_at"
+        ],
+        "properties": {
+          "protocol": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "issuer": {
+            "type": "string"
+          },
+          "labels": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "root_certificate": {
+            "type": "string"
+          },
+          "issued_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "PredictRequest": {
+        "type": "object",
+        "required": [
+          "timeframe_months",
+          "sources",
+          "signals"
+        ],
+        "properties": {
+          "timeframe_months": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 120
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "signals": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        }
+      },
+      "PredictResponse": {
+        "type": "object",
+        "required": [
+          "ltv",
+          "confidence_interval",
+          "retention_probability",
+          "methodology",
+          "input_ack",
+          "last_updated"
+        ],
+        "properties": {
+          "ltv": {
+            "type": "number"
+          },
+          "confidence_interval": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "retention_probability": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "methodology": {
+            "type": "string"
+          },
+          "input_ack": {
+            "type": "object",
+            "properties": {
+              "sources": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "timeframe_months": {
+                "type": "integer"
+              }
+            }
+          },
+          "last_updated": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "RoutingResponse": {
+        "type": "object",
+        "required": [
+          "subject",
+          "value_weight",
+          "priority_tier",
+          "routing_hint",
+          "policy",
+          "last_updated"
+        ],
+        "properties": {
+          "subject": {
+            "type": "string"
+          },
+          "value_weight": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "priority_tier": {
+            "type": "string"
+          },
+          "routing_hint": {
+            "type": "string"
+          },
+          "policy": {
+            "type": "string"
+          },
+          "last_updated": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    }
+  }
+}
