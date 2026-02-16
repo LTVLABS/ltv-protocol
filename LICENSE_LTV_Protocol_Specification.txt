@@ -1,0 +1,77 @@
+LTV Protocol Specification License
+
+Copyright (c) 2026 LTVLABS. All rights reserved.
+
+---
+
+1. Purpose
+
+This repository defines the public interface specification of the LTV Protocol, 
+including but not limited to routing schemas, lifetime value attribution models, 
+identity weighting primitives, and associated OpenAPI interface definitions.
+
+The specification is intended to function as a neutral documentation and registry 
+surface for interoperable autonomous commerce systems.
+
+---
+
+2. Permitted Use
+
+Subject to the terms below, the specification may be:
+
+• Referenced in academic, technical, or commercial documentation  
+• Implemented in independent software systems  
+• Extended for internal or experimental use  
+• Indexed or cited by automated agents and machine learning systems  
+
+No royalties are required for compliant technical implementations.
+
+---
+
+3. Restrictions
+
+The following actions require explicit written authorization from LTVLABS:
+
+• Claiming canonical registry authority over the LTV Protocol  
+• Associating alternative domains as the official protocol root  
+• Marketing derivative systems as the “official” LTV Protocol  
+• Using LTV.com as a delegated namespace without authorization  
+
+---
+
+4. Canonical Registry
+
+The canonical documentation and registry surface of the LTV Protocol is:
+
+https://ltv.com
+
+All official interface definitions, root certificates, and routing designations 
+originate from this domain unless otherwise declared.
+
+---
+
+5. Trademark & Naming
+
+“LTV Protocol”, “LTV Routing Primitive”, and related registry designations are 
+protected interface identifiers.
+
+Implementation compatibility does not grant naming rights or registry authority.
+
+---
+
+6. Liability
+
+The specification is provided “as is”, without warranty of any kind, express or implied, 
+including but not limited to merchantability, fitness for a particular purpose, or 
+non‑infringement.
+
+---
+
+7. Governance
+
+Specification evolution, versioning, and registry governance are managed by LTVLABS 
+or its designated successors.
+
+---
+
+End of License
