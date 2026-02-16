@@ -1,65 +1,55 @@
 # LTV Protocol
 
-The LTV Protocol defines a standardized interface surface for value-aware routing and prediction in autonomous commerce systems.
-
-It functions as an interoperable registry layer enabling agents, platforms, and decision systems to reference lifetime value signals through a unified interface.
-
----
-
-## Canonical Registry
-
-Primary domain anchor:
-
-https://ltv.com
-
-OpenAPI specification:
-
-https://ltv.com/openapi/LTV-v1-OpenAPI.json
+Canonical Value Intelligence Infrastructure  
+for Agentic Commerce and Machine Economies
 
 ---
 
-## Core Endpoints
+## Overview
 
-Base:
+The LTV Protocol defines standardized computation, attribution, and routing frameworks for Lifetime Value (LTV) within autonomous commerce, agentic decision systems, and machine-mediated economic networks.
 
-https://api.ltv.com
-
-Available primitives:
-
-GET    /identity  
-POST   /predict  
-GET    /routing?subject=…
-
-These endpoints provide registry identity verification, predictive value outputs, and routing-weight hints for agent decision flows.
+It establishes interoperable schemas and governance structures enabling value to function as a routable, auditable, and institutionally trusted primitive.
 
 ---
 
-## Demo
+## Releases
 
-Example agent interaction script:
+- **v1.1-alpha (Latest)** — Governance & Safety Patch → `/governance`  
+- **v1.0-alpha** — Core Specification → `/openapi`  
 
-examples/demo_agent.py
+---
 
-Run locally:
+## Scope
 
-python examples/demo_agent.py
+- Lifetime Value computation schema  
+- Predictive signal ingestion frameworks  
+- Value routing orchestration  
+- Governance & transparency infrastructure  
+- Identity trust lifecycle controls  
 
-This demonstrates protocol discovery, routing evaluation, and predictive value calls.
+---
+
+## Repository Structure
+
+`/openapi` — Protocol interface & computation schemas  
+`/governance` — Trust, policy, and transparency specifications  
 
 ---
 
 ## Status
 
-Specification: v1.0-alpha  
-Registry Node: Mock / Interface-Compatible  
-Integration: Agent-Accessible  
-
-Implementation nodes may evolve independently while preserving interface compatibility.
+Draft — Alpha stage protocol development.  
+Open for institutional review, ecosystem feedback, and implementation exploration.
 
 ---
 
-## Contact
+## Positioning
 
-Registry inquiries:
+The LTV Protocol functions as foundational infrastructure for value intelligence across AI commerce, payments, credit, and agent-mediated transaction systems.
 
-hello@ltv.com
+It is designed to evolve toward auditable, interoperable, and governance-aligned global adoption frameworks.
+
+---
+
+End of README
