@@ -46,6 +46,21 @@ Key governance artifacts include:
 
 ---
 
+## Registry & Governance
+
+The LTV.COM Registry functions as a foundational namespace anchor for the LTV Protocol, stewarding canonical reference surfaces for value intelligence coordination across agent and financial ecosystems.
+
+- **Canonical Reference Surface**  
+  The registry publishes primary schema definitions and interface drafts associated with LTV computation and routing frameworks.
+
+- **Namespace Integrity**  
+  The `ltv.com` domain provides a unique namespace context for value signaling constructs, designed to support collision-resistant identification in multi-agent and cross-platform environments.
+
+- **Interoperability Orientation**  
+  By maintaining a provider-neutral interface perspective, the registry framework is intended to facilitate value-language alignment across disparate commerce, payments, and financial systems without exposing proprietary implementation logic.
+
+---
+
 ## Governance Positioning
 
 The Governance Layer establishes institutional trust primitives supporting the LTV Protocol, including:
