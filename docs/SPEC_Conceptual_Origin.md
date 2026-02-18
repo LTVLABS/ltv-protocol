@@ -19,7 +19,26 @@ It focuses on:
 - Predictive value signal interfaces  
 - Routing weight abstraction  
 - Priority tier modeling  
-- Governance and transparency surfaces  
+- Governance and transparency surfaces
+
+- ### Data Provenance & Signal Origination
+
+The LTV Protocol operates as a value signal exchange and routing interface layer and does not require direct ownership or ingestion of raw transactional datasets.
+
+Predictive value signals may originate from a variety of upstream computational environments, including but not limited to:
+
+- Payment processing networks  
+- Subscription and commerce platforms  
+- Merchant-operated analytics systems  
+- Credit underwriting infrastructures  
+- Risk and fraud intelligence providers  
+- Independent value prediction oracles  
+
+The protocol standardizes the schema, attribution context, and routing semantics of predictive value outputs, rather than the methodologies used to derive them.
+
+This architecture preserves institutional model sovereignty while enabling interoperable economic signaling across agent-mediated transaction ecosystems.
+
+As such, the LTV Protocol should be understood as an interface abstraction layer situated downstream of value computation and upstream of routing and orchestration systems.
 
 ## Scope Disclaimer
 
