@@ -21,7 +21,7 @@ It focuses on:
 - Priority tier modeling  
 - Governance and transparency surfaces
 
-- ### Data Provenance & Signal Origination
+## Data Provenance & Signal Origination
 
 The LTV Protocol operates as a value signal exchange and routing interface layer and does not require direct ownership or ingestion of raw transactional datasets.
 
