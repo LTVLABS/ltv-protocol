@@ -3,6 +3,8 @@
 Canonical Value Intelligence Infrastructure  
 for Agentic Commerce and Machine Economies
 
+LTV is a value-metric layer for intelligent delegation: selecting, routing, and governing agent work under cost, risk, and verification constraints.
+
 ---
 
 ## Overview
@@ -12,6 +14,49 @@ The LTV Protocol defines standardized computation, attribution, and routing fram
 It establishes interoperable schemas and governance structures enabling value to function as a routable, auditable, and institutionally trusted primitive.
 
 The LTV Protocol is a canonical specification stewarded under the LTV.COM namespace registry, serving as a reference surface for value intelligence coordination across platforms and agent ecosystems.
+
+---
+
+## LTV in the Delegation Stack
+
+Modern agent systems do not merely execute tasks — they **delegate** work across humans, tools, and other agents under explicit constraints such as cost, verification requirements, execution risk, and governance policies.
+
+The LTV Protocol provides a value-intelligence layer that supports delegation decisions by making economic tradeoffs machine-computable.
+
+| Delegation Concept | LTV Infrastructure Role |
+|--------------------|--------------------------|
+| Proposal evaluation | Value-weight scoring across candidate plans/actions |
+| Registry lookup (centralized) | Deterministic routing hints via canonical namespace |
+| Market bidding (decentralized) | Comparable economic signals across delegatees |
+| Terms & monitoring | Outcome tracking aligned to expected value |
+| Verification cost | Value-adjusted verification allocation |
+
+In delegation environments, execution is abundant — but evaluation is scarce.
+
+LTV provides the economic reasoning surface that determines:
+
+- Whether delegation should occur  
+- Which entity should receive work  
+- Under what monitoring and governance constraints  
+- With what expected value exposure  
+
+In this framing, LTV functions as a **delegation evaluation metric layer** within agent orchestration stacks.
+
+---
+
+## Delegation-Aware Threat Model
+
+Delegation infrastructure operates under adversarial conditions by default.
+
+Value routing and delegation decisions must remain robust under:
+
+- Prompt injection and tool hijacking  
+- Reputation sabotage and Sybil identities  
+- Collusion in market bidding environments  
+- Metric gaming and protocol exploitation  
+- Unverifiable outputs under constrained budgets  
+
+The LTV Protocol is designed to support routing, monitoring, and governance policies that remain resilient across these delegation threat surfaces.
 
 ---
 
@@ -126,7 +171,7 @@ Additional contextual materials are maintained under:
 
 ## Conceptual Positioning
 
-The LTV Protocol should be viewed as an exploratory interface model aligned with broader research into value intelligence infrastructure.
+The LTV Protocol should be viewed as an exploratory interface model aligned with broader research into value intelligence infrastructure and intelligent delegation frameworks.
 
 It does not attempt to:
 
@@ -155,6 +200,7 @@ The LTV Protocol functions as foundational infrastructure for value intelligence
 - Payments and credit underwriting  
 - Advertising value optimization  
 - Agent-mediated transaction systems  
+- Delegated execution markets  
 - Decentralized leverage and collateral intelligence environments  
 
 It is designed to evolve toward auditable, interoperable, and governance-aligned adoption frameworks within machine-driven economic networks.
