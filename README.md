@@ -1,28 +1,9 @@
 # LTV Protocol
 
-![Intelligent Delegation Stack](docs/architecture/Delegation_Stack.png)
-
 Canonical Value Intelligence Infrastructure  
 for Agentic Commerce and Machine Economies
 
 LTV is a value-metric layer for intelligent delegation — enabling agents to evaluate, route, and govern economic work under cost, risk, and verification constraints.
-
----
-
-## Overview
-
-The LTV Protocol defines interoperable schemas and routing primitives for Lifetime Value (LTV) within autonomous commerce, agentic systems, and machine-mediated economic networks.
-
-As execution infrastructure becomes abundant, economic evaluation becomes scarce.
-
-The LTV Protocol establishes value as:
-
-- Routable  
-- Auditable  
-- Verifiable  
-- Institutionally alignable  
-
-It functions as a canonical specification stewarded under the **LTV.COM namespace registry**, providing a coordination surface for value intelligence across heterogeneous platforms.
 
 ---
 
@@ -43,6 +24,34 @@ Execution answers *how*.
 Delegation requires answering *whether*.
 
 The LTV Protocol provides the economic reasoning layer that informs delegation decisions.
+
+---
+
+## Architecture Overview
+
+The LTV Protocol spans multiple infrastructure layers within agent-driven economic systems.
+
+### 1. Delegation Stack Context
+
+![Intelligent Delegation Stack](docs/architecture/Delegation_Stack.png)
+
+This visual model situates LTV within intelligent delegation environments, where execution must be economically evaluated before assignment.
+
+---
+
+### 2. LTV Ecosystem Layered Map
+
+The protocol spans multiple infrastructure layers including settlement, credit leverage, underwriting risk systems, value intelligence engines, and agent economic routing environments.
+
+![LTV Ecosystem Layered Map](docs/architecture/LTV_Ecosystem_Layered_Map.png)
+
+---
+
+### 3. Agent Economic Decision Call Flow
+
+This diagram illustrates how autonomous agents evaluate value, risk, credit capacity, and execution sequencing when interacting with LTV-compliant infrastructure.
+
+![Agent Economic Decision Call Flow](docs/architecture/Agent_Economic_Call_Flow.png)
 
 ---
 
@@ -85,41 +94,6 @@ The LTV Protocol supports heterogeneous economic signals including:
 
 The protocol does not standardize proprietary valuation models.  
 It standardizes the interface through which value intelligence is exchanged.
-
----
-
-## Architecture Overview
-
-The LTV Protocol spans multiple infrastructure layers within agent-driven economic systems.
-
-### 1. Execution Infrastructure
-Performs work.
-
-- Agent systems  
-- Human operators  
-- Tooling services  
-
-### 2. Identity & Registry
-Verifies actors.
-
-- Trusted identities  
-- Delegate registries  
-- Namespace coordination  
-
-### 3. Value Intelligence Layer (LTV)
-Evaluates economic worth.
-
-- Value scoring  
-- Proposal selection  
-- Routing signals  
-- Verification economics  
-
-### 4. Governance & Monitoring
-Enforces constraints.
-
-- Policy controls  
-- Risk oversight  
-- Outcome tracking  
 
 ---
 
