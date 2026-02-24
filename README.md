@@ -1,62 +1,142 @@
 # LTV Protocol
 
+![Intelligent Delegation Stack](docs/architecture/Delegation_Stack.png)
+
 Canonical Value Intelligence Infrastructure  
 for Agentic Commerce and Machine Economies
 
-LTV is a value-metric layer for intelligent delegation: selecting, routing, and governing agent work under cost, risk, and verification constraints.
+LTV is a value-metric layer for intelligent delegation — enabling agents to evaluate, route, and govern economic work under cost, risk, and verification constraints.
 
 ---
 
 ## Overview
 
-The LTV Protocol defines standardized computation, attribution, and routing frameworks for Lifetime Value (LTV) within autonomous commerce, agentic decision systems, and machine-mediated economic networks.
+The LTV Protocol defines interoperable schemas and routing primitives for Lifetime Value (LTV) within autonomous commerce, agentic systems, and machine-mediated economic networks.
 
-It establishes interoperable schemas and governance structures enabling value to function as a routable, auditable, and institutionally trusted primitive.
+As execution infrastructure becomes abundant, economic evaluation becomes scarce.
 
-The LTV Protocol is a canonical specification stewarded under the LTV.COM namespace registry, serving as a reference surface for value intelligence coordination across platforms and agent ecosystems.
+The LTV Protocol establishes value as:
+
+- Routable  
+- Auditable  
+- Verifiable  
+- Institutionally alignable  
+
+It functions as a canonical specification stewarded under the **LTV.COM namespace registry**, providing a coordination surface for value intelligence across heterogeneous platforms.
 
 ---
 
-## LTV in the Delegation Stack
+## Intelligent Delegation Context
 
-Modern agent systems do not merely execute tasks — they **delegate** work across humans, tools, and other agents under explicit constraints such as cost, verification requirements, execution risk, and governance policies.
+Modern agent systems no longer simply execute tasks — they **delegate** work across humans, tools, and other agents.
 
-The LTV Protocol provides a value-intelligence layer that supports delegation decisions by making economic tradeoffs machine-computable.
+Delegation introduces structured decision surfaces:
 
-| Delegation Concept | LTV Infrastructure Role |
-|--------------------|--------------------------|
-| Proposal evaluation | Value-weight scoring across candidate plans/actions |
-| Registry lookup (centralized) | Deterministic routing hints via canonical namespace |
-| Market bidding (decentralized) | Comparable economic signals across delegatees |
-| Terms & monitoring | Outcome tracking aligned to expected value |
-| Verification cost | Value-adjusted verification allocation |
+- Execution cost  
+- Verification cost  
+- Risk exposure  
+- Duration and reversibility  
+- Compliance constraints  
+- Outcome criticality  
 
-In delegation environments, execution is abundant — but evaluation is scarce.
+Execution answers *how*.  
+Delegation requires answering *whether*.
 
-LTV provides the economic reasoning surface that determines:
+The LTV Protocol provides the economic reasoning layer that informs delegation decisions.
 
-- Whether delegation should occur  
-- Which entity should receive work  
-- Under what monitoring and governance constraints  
-- With what expected value exposure  
+---
 
-In this framing, LTV functions as a **delegation evaluation metric layer** within agent orchestration stacks.
+## Delegation Stack Mapping
+
+| Delegation Layer | Infrastructure Role | LTV Contribution |
+|------------------|--------------------|------------------|
+| Task evaluation | Compare expected outcomes | Value-weight scoring |
+| Proposal selection | Rank candidate plans | Predictive value attribution |
+| Delegatee routing | Select execution entity | Deterministic routing signals |
+| Registry lookup | Identity mapping | Canonical namespace surface |
+| Market bidding | Economic competition | Comparable valuation metrics |
+| Monitoring & enforcement | Outcome tracking | Value-aligned telemetry |
+| Verification allocation | Proof vs cost tradeoff | Value-adjusted verification |
+
+LTV does not perform execution.  
+It informs where execution should flow.
+
+---
+
+## Scope
+
+The protocol defines interoperable infrastructure for:
+
+- Lifetime Value computation schemas  
+- Predictive signal ingestion frameworks  
+- Delegation-aware routing orchestration  
+- Governance and transparency primitives  
+- Identity trust lifecycle controls  
+
+### Heterogeneous Value Signals
+
+The LTV Protocol supports heterogeneous economic signals including:
+
+- Commerce Lifetime Value estimates  
+- Subscription revenue projections  
+- Credit and underwriting metrics  
+- DeFi Loan-to-Value ratios  
+- Risk-adjusted economic signals  
+
+The protocol does not standardize proprietary valuation models.  
+It standardizes the interface through which value intelligence is exchanged.
+
+---
+
+## Architecture Overview
+
+The LTV Protocol spans multiple infrastructure layers within agent-driven economic systems.
+
+### 1. Execution Infrastructure
+Performs work.
+
+- Agent systems  
+- Human operators  
+- Tooling services  
+
+### 2. Identity & Registry
+Verifies actors.
+
+- Trusted identities  
+- Delegate registries  
+- Namespace coordination  
+
+### 3. Value Intelligence Layer (LTV)
+Evaluates economic worth.
+
+- Value scoring  
+- Proposal selection  
+- Routing signals  
+- Verification economics  
+
+### 4. Governance & Monitoring
+Enforces constraints.
+
+- Policy controls  
+- Risk oversight  
+- Outcome tracking  
 
 ---
 
 ## Delegation-Aware Threat Model
 
-Delegation infrastructure operates under adversarial conditions by default.
+Delegation infrastructure operates under adversarial conditions.
 
-Value routing and delegation decisions must remain robust under:
+Value routing policies must remain resilient against:
 
-- Prompt injection and tool hijacking  
-- Reputation sabotage and Sybil identities  
-- Collusion in market bidding environments  
-- Metric gaming and protocol exploitation  
-- Unverifiable outputs under constrained budgets  
+- Prompt injection into delegated tools  
+- Identity spoofing and Sybil attacks  
+- Reputation manipulation  
+- Collusive bidding behavior  
+- Metric gaming  
+- Fabricated or unverifiable outputs  
 
-The LTV Protocol is designed to support routing, monitoring, and governance policies that remain resilient across these delegation threat surfaces.
+The LTV governance layer supports trust-aware routing and telemetry alignment under these conditions.
 
 ---
 
@@ -67,119 +147,54 @@ The LTV Protocol is designed to support routing, monitoring, and governance poli
 
 ---
 
-## Scope
-
-- Lifetime Value computation schema  
-- Predictive signal ingestion frameworks  
-- Value routing orchestration  
-- Governance & transparency infrastructure  
-- Identity trust lifecycle controls
-  
-### Heterogeneous Value Signal Support
-
-The LTV Protocol supports heterogeneous value signals spanning multiple economic domains, including Loan-to-Value ratios from DeFi collateral oracles and Lifetime Value estimates from commerce intelligence systems.
-
-Rather than competing with vertical implementations, the protocol provides an interoperable interface layer through which distinct instantiations of the LTV primitive can be contextualized, normalized, and routed across agent economic environments.
-
-This compatibility model enables leverage ratios, underwriting metrics, and predictive commerce valuation signals to coexist within a unified value routing surface.
-
----
-
-## Architecture Overview
-
-The LTV Protocol defines a multi-layer semantic and operational framework for value intelligence across machine-driven economic systems.
-
-### LTV Ecosystem Layered Map
-
-The protocol spans multiple infrastructure layers including settlement, credit leverage, underwriting risk systems, value intelligence engines, and agent economic routing environments.
-
-![LTV Ecosystem Layered Map](docs/architecture/LTV_Ecosystem_Layered_Map.png)
-
-### Agent Economic Decision Call Flow
-
-This diagram illustrates how autonomous agents evaluate value, risk, credit capacity, and execution sequencing when interacting with LTV-compliant infrastructure.
-
-![Agent Economic Decision Call Flow](docs/architecture/Agent_Economic_Call_Flow.png)
-
----
-
 ## Repository Structure
 
 `/openapi` — Protocol interface & computation schemas  
 `/governance` — Trust, policy, and transparency specifications  
-`/spec` — Specification documentation and conceptual positioning  
-`/docs` — Research and contextual framing materials  
+`/spec` — Conceptual specification documents  
+`/docs` — Research and contextual alignment materials  
 
 Key governance artifacts include:
 
 - Transparency log commitments  
 - Incident response framework  
 - Policy oversight definitions  
-- Identity trust lifecycle controls  
+- Identity lifecycle controls  
 
 ---
 
-## Registry & Governance
+## Registry & Namespace
 
-The LTV.COM Registry functions as a namespace coordination surface for the LTV Protocol, stewarding reference schemas and identity alignment structures supporting value intelligence interoperability.
+The LTV.COM Registry functions as a coordination surface for value signaling constructs.
 
-- **Canonical Reference Surface**  
-  The registry publishes schema definitions and interface drafts associated with LTV computation and routing frameworks.
+It provides:
 
-- **Namespace Integrity**  
-  The `ltv.com` domain provides a unique namespace context for value signaling constructs, supporting collision-resistant identification across agent and platform environments.
+- Canonical reference definitions  
+- Collision-resistant namespace identity  
+- Provider-neutral routing interfaces  
+- Cross-ecosystem semantic alignment  
 
-- **Interoperability Orientation**  
-  By maintaining a provider-neutral interface perspective, the registry framework facilitates value-language alignment across commerce, payments, financial systems, and decentralized leverage infrastructures without exposing proprietary implementation logic.
-
----
-
-## Governance Positioning
-
-The Governance Layer establishes institutional trust primitives supporting the LTV Protocol, including:
-
-- Explainability surfaces for predictive outputs  
-- Privacy-safe signal constraints  
-- Identity revocation and key rotation frameworks  
-- Routing neutrality and policy transparency  
-
-This layer ensures value computation remains auditable, verifiable, and deployable within regulated financial and autonomous agent environments.
-
-Governance specifications are maintained under:
-
-`/governance`
-
----
-
-## Research Context
-
-The conceptual framing underlying this specification is explored in the following research article:
-
-**The Missing Value Layer in Agent Commerce — Toward a Value Intelligence Stack**
-
-This research examines the structural separation between execution infrastructure and valuation infrastructure within autonomous transaction systems, proposing interoperable signaling layers for predictive value intelligence.
-
-Read the article:
-
-https://medium.com/@caihexuan/the-missing-value-layer-in-agent-commerce-072be8a9a2fa
-
-Additional contextual materials are maintained under:
-
-`/docs/research-context.md`
+The registry does not impose proprietary valuation logic.  
+It enables interoperable value signaling.
 
 ---
 
 ## Conceptual Positioning
 
-The LTV Protocol should be viewed as an exploratory interface model aligned with broader research into value intelligence infrastructure and intelligent delegation frameworks.
+The LTV Protocol:
 
-It does not attempt to:
+Does NOT:
+- Define proprietary financial scoring algorithms  
+- Replace institutional underwriting systems  
+- Custody or compute raw transaction data  
 
-- Define proprietary financial scoring methodologies  
-- Standardize underwriting algorithms  
-- Replace institution-specific valuation systems  
+Does:
+- Provide interoperable value interfaces  
+- Enable delegation-aware economic routing  
+- Support auditable and verifiable value exchange  
 
-Instead, it proposes interoperable signaling surfaces through which predictive value may be exchanged and routed across agent ecosystems.
+Value computation remains institution-specific.  
+Value signaling becomes interoperable.
 
 ---
 
@@ -187,51 +202,40 @@ Instead, it proposes interoperable signaling surfaces through which predictive v
 
 Draft — Alpha stage protocol development.
 
-Open for institutional review, ecosystem feedback, and exploratory implementation alignment.
+Open for ecosystem feedback, research alignment, and exploratory institutional review.
+
+---
+
+## Research Context
+
+Conceptual foundations are explored in:
+
+**The Missing Value Layer in Agent Commerce — Toward a Value Intelligence Stack**
+
+https://medium.com/@caihexuan/the-missing-value-layer-in-agent-commerce-072be8a9a2fa
+
+Additional alignment material:
+
+`/docs/delegation-alignment.md`
 
 ---
 
 ## Infrastructure Positioning
 
-The LTV Protocol functions as foundational infrastructure for value intelligence across:
+The LTV Protocol functions as foundational infrastructure across:
 
-- AI commerce  
+- AI commerce systems  
 - Subscription economies  
-- Payments and credit underwriting  
+- Credit and underwriting environments  
 - Advertising value optimization  
-- Agent-mediated transaction systems  
 - Delegated execution markets  
-- Decentralized leverage and collateral intelligence environments  
+- Agent-mediated transaction networks  
+- Decentralized leverage infrastructures  
 
-It is designed to evolve toward auditable, interoperable, and governance-aligned adoption frameworks within machine-driven economic networks.
-
----
-
-## Data Provenance & Signal Origination
-
-The LTV Protocol does not assume ownership, custody, or direct access to underlying transaction data.
-
-Predictive value signals transmitted through the protocol may be computed by multiple originating entities, including:
-
-- Payment providers  
-- Commerce platforms  
-- Merchants and subscription operators  
-- Credit and risk intelligence systems  
-- DeFi collateral and leverage infrastructures  
-- Third-party value analytics providers  
-
-The protocol defines interoperable interfaces for the exchange and routing of predictive value intelligence, not the computation or standardization of proprietary valuation models.
-
-In this model, value computation remains institution-specific, while value signaling becomes system-interoperable.
-
-This separation preserves provider autonomy while enabling cross-platform coordination of economic routing decisions.
+It is designed to evolve toward governance-aligned, auditable adoption within machine-driven economic systems.
 
 ---
 
 ## Repository
 
 https://github.com/LTVLABS/ltv-protocol
-
----
-
-End of README
